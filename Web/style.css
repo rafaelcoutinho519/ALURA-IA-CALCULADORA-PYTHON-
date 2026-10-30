@@ -74,7 +74,10 @@ body {
     padding: 0 20px;
 }
 
-.intro-section {
+.intro-header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     margin-bottom: 25px;
 }
 
@@ -87,6 +90,22 @@ body {
 .intro-section p {
     color: #9ca3af;
     font-size: 14px;
+}
+
+.btn-mudarfórmulas {
+    background-color: #262a33;
+    border: 1px solid #374151;
+    color: #f59e0b;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-mudarfórmulas:hover {
+    background-color: #323846;
 }
 
 .content-grid {
