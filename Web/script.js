@@ -49,6 +49,6 @@ function calculate() {
 
 function updateHistoryUI() {
     if (historyList.length === 0) return;
-    historyContent.innerHTML = historyList.map(item => `<div style="padding: 4px 0; border-bottom: 1px solid #2d3139; font-size:13px;">${item}</div>`).join('');
+    historyContent.innerHTML = historyList.map(item => `<div style="padding: 6px 0; border-bottom: 1px solid #2d3139; font-size:13px; color: #f3f4f6;">${item}</div>`).join('');
     historyContent.className = '';
 }
