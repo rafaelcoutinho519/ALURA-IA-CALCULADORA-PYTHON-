@@ -1,40 +1,39 @@
 # 🧮 Calculadora Simples (Python & Web)
 
-Projeto desenvolvido para fixar os conceitos fundamentais de lógica de programação, unindo um script de calculadora em **Python** com uma interface interativa moderna.
+Projeto desenvolvido como o **primeiro desafio da IMERSÃO ALURA**, unindo um script de calculadora em **Python** com uma interface interativa moderna em modo escuro.
 
 ---
 
-## 📸 Demonstração Visual
+## 🖼️ Demonstração Visual
 ![Pré-visualização da Calculadora](./preview.jpeg)
+
+---
+
+## 📱 Funcionalidades
+
+| Operação | Exemplo |
+| :--- | :--- |
+| **➕ Adição** | 10 + 5 = 15 |
+| **➖ Subtração** | 20 - 8 = 12 |
+| **✖️ Multiplicação** | 6 × 4 = 24 |
+| **➗ Divisão** | 20 ÷ 4 = 5 |
 
 ---
 
 ## 🚀 Tecnologias Utilizadas
 
 * **Python:** Script lógico para execução de operações básicas no terminal.
-* **HTML5 / CSS3 / JavaScript:** Estrutura, design responsivo e lógica interativa da interface web.
+* **HTML5 / CSS3 / JavaScript:** Estrutura, design responsivo em *Dark Mode* e lógica interativa da interface web.
 
 ---
 
-## 📁 Estrutura do Repositório
+## 📂 Estrutura do Repositório
 
 ```text
 📦 Calculadora-simples
  ┣ 📂 Web
- ┃ ┣ 📜 index.html
- ┃ ┣ 📜 script.js
- ┃ ┗ 📜 style.css
+ ┃  ┣ 📜 index.html
+ ┃  ┣ 📜 script.js
+ ┃  ┗ 📜 style.css
  ┣ 📜 calculadora.py
- ┗ 📜 preview.png
-
-
-
-Como Executar o Projeto
-1. Versão Python (Terminal CLI)
-Certifique-se de ter o Python instalado na sua máquina e execute o seguinte comando no terminal na raiz do projeto:
-
-Bash
-python calculadora.py
-
-2. Versão Web
-Basta abrir o arquivo index.html (localizado dentro da pasta Web) diretamente em qualquer navegador de internet para interagir com a interface gráfica da calculadora.
+ ┗ 📜 preview.jpeg
