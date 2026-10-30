@@ -3,39 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Calculadora Python/Web</title>
+    <title>Calculadora Python Simples</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="calculator-container">
-        <h1>Minha Calculadora</h1>
-        <p>Projeto desenvolvido com Python e tecnologias web.</p>
-        
-        <div class="calculator">
-            <input type="text" id="display" readonly value="0">
-            <div class="keys">
-                <button onclick="clearDisplay()">C</button>
-                <button onclick="appendOperator('/')">/</button>
-                <button onclick="appendOperator('*')">*</button>
-                <button onclick="appendOperator('-')">-</button>
-                
-                <button onclick="appendNumber('7')">7</button>
-                <button onclick="appendNumber('8')">8</button>
-                <button onclick="appendNumber('9')">9</button>
-                <button onclick="appendOperator('+')">+</button>
-                
-                <button onclick="appendNumber('4')">4</button>
-                <button onclick="appendNumber('5')">5</button>
-                <button onclick="appendNumber('6')">6</button>
-                <button onclick="calculate()" class="equal">=</button>
-                
-                <button onclick="appendNumber('1')">1</button>
-                <button onclick="appendNumber('2')">2</button>
-                <button onclick="appendNumber('3')">3</button>
-                <button onclick="appendNumber('0')">0</button>
+    <header class="top-nav">
+        <div class="nav-left">
+            <span class="badge-py">Py</span>
+            <span class="nav-title">Calculadora Python</span>
+        </div>
+        <div class="nav-right">
+            <button class="nav-btn active">Calculadora</button>
+            <button class="nav-btn">Alterar Operações (Fácil)</button>
+            <button class="nav-btn">Terminal CLI</button>
+            <button class="nav-btn">Código-Fonte (.py)</button>
+            <button class="nav-btn download-btn">Baixar calculadora.py</button>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div class="intro-section">
+            <h1>Calculadora Python Simples</h1>
+            <p>Realize operações básicas com facilidade. Você pode alterar qualquer fórmula na aba "Alterar Operações".</p>
+        </div>
+
+        <div class="content-grid">
+            <!-- Calculadora -->
+            <div class="calculator-card">
+                <input type="text" id="display" readonly value="0">
+                <div class="keys-grid">
+                    <button class="btn-action" onclick="clearDisplay()">C</button>
+                    <button class="btn-action" onclick="backspace()">⌫</button>
+                    <button class="btn-action" onclick="appendOperator('±')">±</button>
+                    <button class="btn-operator" onclick="appendOperator('/')">÷</button>
+
+                    <button onclick="appendNumber('7')">7</button>
+                    <button onclick="appendNumber('8')">8</button>
+                    <button onclick="appendNumber('9')">9</button>
+                    <button class="btn-operator" onclick="appendOperator('*')">×</button>
+
+                    <button onclick="appendNumber('4')">4</button>
+                    <button onclick="appendNumber('5')">5</button>
+                    <button onclick="appendNumber('6')">6</button>
+                    <button class="btn-operator" onclick="appendOperator('-')">-</button>
+
+                    <button onclick="appendNumber('1')">1</button>
+                    <button onclick="appendNumber('2')">2</button>
+                    <button onclick="appendNumber('3')">3</button>
+                    <button class="btn-operator" onclick="appendOperator('+')">+</button>
+
+                    <button class="btn-zero" onclick="appendNumber('0')">0</button>
+                    <button onclick="appendNumber('.')">.</button>
+                    <button class="btn-equals" onclick="calculate()">=</button>
+                </div>
+            </div>
+
+            <!-- Painéis Laterais -->
+            <div class="side-panels">
+                <div class="panel-box">
+                    <div class="panel-header">
+                        <span>🟢 CÓDIGO PYTHON EQUIVALENTE</span>
+                        <button class="copy-btn">Copiar</button>
+                    </div>
+                    <div class="code-preview">
+                        <code># Selecione uma operação básica (+, -, * ou /)</code>
+                    </div>
+                    <p class="panel-footer-text">💡 Qualquer alteração que você fizer na aba <em>Alterar Operações</em> mudará este código automaticamente.</p>
+                </div>
+
+                <div class="panel-box">
+                    <div class="panel-header">
+                        <span>🕒 Histórico de Operações</span>
+                    </div>
+                    <div id="history-content" class="history-empty">
+                        Faça uma soma, subtração, multiplicação ou divisão para ver o histórico aqui!
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>
